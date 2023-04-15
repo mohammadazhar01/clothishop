@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+/*CSS for Product Detail page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Opens Sans', sans-serif;
+
+}
+
+body{
+    line-height: 1.5;
+    background: whitesmoke;
+}
+
+.card-wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.img-display{
+    overflow: hidden;
+}
+
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.img-showcase img{
+    min-width: 100%;
+    height: 80vh;
+}    
+
+.img-select{
+    display: flex;
+}
+
+.img-item{
+    margin: 0.2rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+
+.img-item:hover{
+    opacity: 0.8;
+}
+
+.product-content{
+    padding: 2rem 1rem;
+}
+
+.product-title{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 0.5rem 0;
+}
+
+.product-title::after{
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     height: 4px;
+     width: 170px;
+     background: #12263a;
+}
+
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0 0 1rem 12.5rem;
+    background: #ed7072;
+    color: #fff;
+    padding: 0.2rem 0.2rem;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+.product-link:hover{
+    background-color: #e8585a;
+}
+
+.product-price{
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.mineral-code p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #f64749;
+}
+
+.mineral-code p span{
+    color: grey;
+    font-weight: 600;
+}
+
+.product-price span{
+    font-weight: 500;
+}
+
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+    font-weight: 550;
+}
+
+.new-price span{
+    color: #2d9939;
+    font-weight: 550;
+}
+
+.delivery-charges p{
+    /* margin: 1rem 0; */
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: grey;
+}
+
+.delivery-charges p span{
+    color: #12263a;
+}
+
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+
+.product-price ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(../images/check.png) left center no-repeat;
+    background-size: 20px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.product-detail ul li span{
+    font-weight: 500;
+    color:#12263a;
+}
+
+.product{
+    margin: 1.5rem 0;
+}
+
+.purchase .btn-purchase{
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.60rem 3.0rem;
+    outline: 0;
+    margin: 2rem 0 1rem 11rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.0rem
+}
+
+.purchase .btn-purchase:first-of-type{
+    background: #256eff;
+}
+
+.purchase .btn-purchase:hover{
+    opacity: 0.9;
+    padding: 0.60rem 3.0rem;
+}
+
+
+@media only screen and (max-width:768px){
+    img{
+        margin-top: 0.3rem;
+    }
+
+    /*.product-title{
+        font-size: 2rem;
+    }*/
+
+    .product-title{
+        font-size: 2.0rem;
+        margin-top: 0.5rem;
+    }
+
+    .mineral-code p{
+        font-size: 1.0rem;
+    }
+    .purchase .btn-purchase{
+        margin: 1rem 0 0rem 4rem;
+    }
+    .product-link{
+        margin: 1rem 0 0 6.5rem;
+        font-size: 0.8rem;
+    }
+
+    .img-item{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .detail-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+    
+    .mineral-code p{
+    font-size: 0.8rem;
+    }
+    
+}

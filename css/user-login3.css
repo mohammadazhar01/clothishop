@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+ }
+ body::before{
+   content: '';
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   background-image: url("../images/signup.jpg"); 
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   -webkit-filter: blur(2px);
+   -moz-filter: blur(2px);
+ }
+ 
+ .login{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%,-50%);
+   -moz-transform: translate(-50%,-50%);
+   -ms-transform: translate(-50%,-50%);
+   -o-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+   width: 400px;
+   height: 650px;
+   padding: 8px 40px;
+   background: rgba(255, 255, 255, 0.6);
+ }
+ 
+ .logo{
+       width: 50%;
+       padding:0px 20;;
+       margin-left: 74px;
+ }
+ 
+ .login h1{
+   margin: 0;
+   padding: 0 0 20px;
+   color: #2f3542;
+   text-align: center;
+   text-transform: uppercase;
+ }
+ 
+ .login p{
+   margin: 0;
+   padding: 0;
+   font-weight: bold;
+   color: black;
+ }
+ 
+ .login p a{
+    text-decoration: none;
+ }
+ 
+ .login input{
+   width: 100%;
+   margin-bottom: 20px;
+ }
+ 
+ .login input[type=text],
+ .login input[type=Password],
+ .login input[type=tel],
+ .login input[type=email]{
+   border: none;
+   border-bottom: 1px solid black;
+   font-size: 20px;
+   background: transparent;
+   outline: none;
+   height: 35px;
+   color: black;
+   font-size: 15px;
+ }
+ 
+  .login select{
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: black;
+    font-size: 15px;
+  }
+ 
+ .login input[type=submit]{
+   height: 30px;
+   color: #fff;
+   font-size: 15px;
+   font-weight: bold;
+   background-color: #1e90ff;
+   cursor: pointer;
+   border-radius: 25px;
+   border: none;
+   outline: none;
+   margin-top: 15px;
+ }
+ 
+ .login input[type=submit]:hover{
+    background-color: #77b5fe;
+ }
+ 
+ .btn-primary{
+   background-color: #1e90ff;
+   padding: 1%;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+ } 
+ 
+ .btn-primary a{
+    color: white;
+ }
+ 
+ .btn-primary:hover{
+   background-color: #77b5fe;
+ }
+ 
+ .success{
+    color: #10bd58;
+    font-size: 1.3rem;
+ }
+ .error{
+    color: #ff4757;
+    font-size: 1.3rem;
+ }
+ 
+ 
+ .text-center{
+    text-align: center;
+ }
+ 
+ .text-black{
+    color:black;
+ }
+ 
+ 
+ 
+ .text-color{
+    color: #1e90ff;
+ }
+ 
+ 
+ 
+ /* CSS for Mobile Size or Smaller Screen */
+ 
